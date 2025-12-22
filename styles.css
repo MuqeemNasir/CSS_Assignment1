@@ -1,0 +1,359 @@
+:root {
+  --dark-bg: #090a0b;
+  --light-text: #fff;
+  --grey-text: #738a94;
+  --blue-accent: #3eb0ef;
+  --bg-light: #eef2f4;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--light-text);
+  color: #15171a;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+nav,
+.tag-blue,
+.brand-name,
+.subscribe-btn,
+.author-name,
+.meta-date {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: var(--dark-bg);
+  color: var(--light-text);
+  width: 100%;
+  padding-bottom: 80px;
+}
+
+/* -------------------NavBar section-------------------- */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-left {
+  display: flex;
+  gap: 35px;
+  padding-left: 1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding-right: 1rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: var(--light-text);
+}
+
+.nav-right li {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.btn {
+  padding-left: 1.7rem;
+}
+
+.ghost-btn {
+  border: 1.5px solid lightgrey;
+  background-color: transparent;
+  color: var(--light-text);
+  font-size: 1rem;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* -------------------Ghost Logo section-------------------- */
+
+.hero-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem;
+  font-family: "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: -10px;
+}
+
+.ghost-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 40px;
+  justify-content: center;
+}
+
+.bar {
+  width: 100%;
+  height: 7px;
+  background-color: #d3cbcb;
+}
+
+.gap-in-bar {
+  display: flex;
+  gap: 20%;
+}
+
+.short {
+  width: 25%;
+}
+
+.brand-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  padding-bottom: 10px;
+}
+
+.brand-subtitle {
+  font-size: 2rem;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+/* -------------------Main Layout-------------------- */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4vh;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.hero-image {
+  /* flex: 1.8; */
+  /* background-color: var(--bg-light); */
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 800px;
+  background-color: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  /* flex: 1; */
+}
+.tag-blue {
+  color: var(--blue-accent);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: block;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  font-family: serif;
+}
+
+.post-meta {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+
+.author-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.meta-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.author-name {
+  font-weight: 700;
+  color: #15171a;
+  text-transform: uppercase;
+}
+
+.meta-date {
+  color: var(--grey-text);
+  text-transform: uppercase;
+}
+
+/* -------------------Posts Layout-------------------- */
+
+.post-feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0 3rem;
+  padding-left: 3rem;
+  margin-bottom: 80px;
+}
+.border{
+  border-bottom: 1px solid lightgray;
+
+}
+
+.post-card {
+  flex: 0 0 calc((100% - 80px) / 3);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  
+}
+
+.card-image {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.imageCard2 {
+  width: 100%;
+  height: 220px;
+  border-radius: 10px;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
+
+.tag-blue2 {
+  color: var(--blue-accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  display: block;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: var(--grey-text);
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-family: -apple-system, sans-serif;
+  margin-bottom: 0;
+}
+
+/* -------------------Posts Layout-------------------- */
+
+.blog-card{
+  flex: 0 0 calc((100% - 80px) / 2);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.blog-image{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.imageCard3{
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+}
