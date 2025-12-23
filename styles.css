@@ -23,7 +23,7 @@
    at the standard 100% browser scale.
 
    Solution (Emergency Fix): 
-   We apply 'zoom: 0.8' to the body. This forces the browser to render 
+   Apply 'zoom: 0.8' to the body. This forces the browser to render 
    the entire page at 80% scale, visually matching the original design 
    intent without needing to manually refactor every pixel value in the CSS.
    -----------------------------------------------------------------------
