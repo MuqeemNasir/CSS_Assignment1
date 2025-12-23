@@ -12,6 +12,22 @@
   padding: 0;
 }
 
+/* 
+   -----------------------------------------------------------------------
+   ZOOM SCALING FIX
+   -----------------------------------------------------------------------
+   Problem: 
+   The layout was developed and styled while the browser window was 
+   accidentally zoomed out to 80%. As a result, all pixel dimensions 
+   (widths, fonts, margins) are technically 20% too large when viewed 
+   at the standard 100% browser scale.
+
+   Solution (Emergency Fix): 
+   We apply 'zoom: 0.8' to the body. This forces the browser to render 
+   the entire page at 80% scale, visually matching the original design 
+   intent without needing to manually refactor every pixel value in the CSS.
+   -----------------------------------------------------------------------
+*/
 body {
   zoom: 0.8;
   background-color: var(--light-text);
